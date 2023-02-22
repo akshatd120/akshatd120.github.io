@@ -1,4 +1,4 @@
-let bgColor = 60;
+let bgColor = 40;
 let w = 34;
 let angle = 0;
 let ma = 0;
@@ -46,19 +46,17 @@ function draw() {
 
 function imp()
 {
- let nnum = w-1;
- if(nnum>0)
+ if( (w-1) > 0)
  {
-   w -=1;
+   w --;
    level ++;
  }
 }
 function dep()
 {
-let nL = level - 1;
- if(nL > 0)
+ if((level - 1) > 0)
  {
-   w+=1;
+   w++;
    level --;
  }
 }
